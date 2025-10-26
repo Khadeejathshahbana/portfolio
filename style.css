@@ -1,0 +1,527 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+body{
+    background-color: black;
+}
+
+.logo {
+    color:white;
+    background-color: blueviolet;
+}
+
+.nav-link{
+    color: white;
+    font-size:1rem;
+    font-weight: 700;
+    cursor:pointer;
+    text-decoration: none;
+    border-radius: 6px;
+    
+
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: rgb(82, 6, 153);
+}
+
+nav{
+    background-color: blueviolet;
+}
+
+nav div{
+    background-color: blueviolet;
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    color:white;
+    font-weight: 800;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.main{
+    width:100%;
+    /* height:95vh; */
+}
+
+
+.main h3{
+    font-size:4.4rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size:23px;
+    text-transform:uppercase;
+    /* line-height:3; */
+    border-bottom: 3px solid rgb(167,26,84);
+    width:50%;
+}
+
+.bt1{
+    height:40px;
+    width:145px;
+    color:white;
+    background-color: blueviolet;
+    border:none;
+    /* padding:8px; */
+    border-radius: 4px;
+    outline:none;
+ }
+
+.bt2{
+    height:40px;
+    width:145px;
+    color:blueviolet;
+    background-color: black;
+    border:1px solid blueviolet;
+    border-radius: 4px;
+    
+} 
+
+
+.main .bt1:hover{
+    color:blueviolet;
+    background-color:transparent;
+    transition:0.5s;
+    border:1px solid blueviolet;
+    transition: 0.5s;
+
+}
+
+
+/* .main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color:blueviolet;
+    outline: none;
+    border: 1px solid blueviolet;
+    font-weight: bold;
+    border-radius:5px;
+} */
+
+.main .bt2:hover{
+    background-color: blueviolet;
+    color:white;
+    transition: 0.5s;;
+}
+
+.heroimg {
+  width: 100%;
+  max-width: 520px;
+  height: 580px;
+  object-fit: cover;
+  margin-top: -50px; 
+  margin-right: 50px;
+}
+
+
+.prdhimg {
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  object-fit: cover;
+  margin-top: -150px; 
+  margin-right: 100px;
+}
+
+
+.aboutme{
+    color:blueviolet
+}
+
+.progress{
+    background-color:gray;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position:relative;
+    display:flex;
+    height:25px;
+    width:95%;
+    /* padding:2px; */
+    overflow:hidden;
+    margin-top: 15px;
+}
+.pro-value1, .pro-value2, .pro-value3, .pro-value4 {
+    border-radius: 50px;
+    background-color: blueviolet;
+    height: 100%;
+    width: 0;  /* start at 0 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: width 3s ease-in-out;
+}
+
+.pro-value1 p, .pro-value2 p, .pro-value3 p, .pro-value4 p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/* .pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: blueviolet;
+    height:25px;
+    width:0;
+    margin-left: -10px;
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+    color:white;
+    
+    padding: 0px 20px;
+
+}
+
+.pro-value1 p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0; /* removes unwanted space */
+/* } */
+
+/* .pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: blueviolet;
+    height:25px;
+    width:0;
+    margin-left: -10px;
+
+
+    display:flex;
+    align-items:center;
+    
+    color:white;
+    padding: 0 20px;
+
+}
+
+.pro-value2 p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0; 
+}
+
+
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: blueviolet;
+    height:25px;
+    width:0;
+    margin-left: -10px;
+
+
+    display:flex;
+    align-items:center;
+    
+
+    color:white;
+    padding: 0 20px;
+
+} */
+
+/*.pro-value3 p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0; /* removes unwanted space */
+/* } */
+/*
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: blueviolet;
+    height:25px;
+    width:0;
+    margin-left: -10px;
+
+
+    display:flex;
+    align-items:center;
+    /* justify-content: space-between; */
+
+    /*color:white;
+    padding: 0 20px;
+
+}*/
+
+/*.pro-value4 p{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0; /* removes unwanted space */
+/* } */
+
+/* 
+.progress{
+    color:white;
+    padding:2px;
+} */
+
+/*
+@keyframes load1{
+    0%{
+        width:0;
+    }
+    100%{
+        width:98%;
+    }
+}
+
+.percent{
+    margin-left: auto;
+}
+
+@keyframes load2{
+    0%{
+        width:0;
+    }
+    100%{
+        width:90%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width:0;
+    }
+    100%{
+        width:50%;
+    }
+}
+
+@keyframes load4{
+    0%{
+        width:0;
+    }
+    100%{
+        width:98%;
+    }
+}
+ */
+
+.btn1{
+    height:40px;
+    width:145px;
+    color:white;
+    background-color: blueviolet;
+    border:none;
+    /* padding:8px; */
+    border-radius: 4px;
+    outline:none;
+ }
+
+.btn2{
+    height:40px;
+    width:145px;
+    color:blueviolet;
+    background-color: black;
+    border:1px solid blueviolet;
+    border-radius: 4px;
+    
+} 
+
+
+.btn1:hover{
+    color:blueviolet;
+    background-color:transparent;
+    transition:0.5s;
+    border:1px solid blueviolet;
+    transition: 0.5s;
+}
+
+
+.btn2:hover{
+    color:white;
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.about .i2{
+    color:blueviolet;
+}
+
+
+.about .i2:hover{
+    color:white;
+}
+
+.services{
+    background-color: black;
+}
+
+.services .card{
+    min-height:340px;
+}
+
+.services h4{
+    color:blueviolet;
+}
+
+.card{
+    border:none;
+    outline:none;
+    /* -webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75); */
+}
+
+.card p{
+    color:white;
+}
+
+.circle{
+    height:70px;
+    width:70px;
+    background-color:gray;
+    color:white;
+    font-size:30px;
+    border-radius:50%;
+    padding:12px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.service{
+    color:blueviolet;
+}
+
+.card:hover .circle{
+    background-color: blueviolet;
+    color:white;
+    transition:0.5s;
+}
+
+.item{
+    position: relative;
+    /* overflow: hidden; /* ensures overlay doesn’t spill out */
+    /* transition: box-shadow 0.5s ease; */ 
+
+}
+.item:hover{
+    -webkit-box-shadow: -18px 3px 109px -65px rgba(202, 200, 200, 0.75);
+    -moz-box-shadow: -18px 3px 109px -65px rgba(207, 202, 202, 0.75);
+    box-shadow: -18px 3px 109px -65px rgba(209, 206, 206, 0.75);
+    transition:0.5s;
+    transform: scale(1.04);
+}
+
+.item::before{
+    content:"";
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(102, 99, 99, 0.479);
+    opacity: 0;
+    /* z-index:1; */
+    position:absolute;
+
+}
+
+.item:hover::before{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.card-custom {
+  position: relative;
+  /* overflow: hidden; */
+  height: 600px; /*total card height (adjust as needed)*/
+}
+
+.card-custom-image {
+   /* image takes up 60% of the card */
+  overflow: hidden;
+}
+
+.card-custom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.card-custom-content {
+  /* rest of the card (40%) */
+  padding: 15px;
+  color: blueviolet;
+}
+
+.card-custom:hover .card-custom-image img{
+    transform:scale(1.1);
+    
+}
+
+.card-custom:hover{
+    transform:scale(1.5);
+}
+
+.projects h1{
+    color:blueviolet;
+}
+
+.circle:hover{
+    background-color:blueviolet;
+    transition:0.4s;
+}
+
+.form-control::placeholder {
+  color: white; /* light gray */
+  opacity: 1;  /* make sure it's visible */
+}
+
+.contact .btn-3{
+    /* background-color: blueviolet; */
+   height:40px;
+    width:145px;
+    color:blueviolet;
+    background-color: black;
+    border:1px solid blueviolet;
+    border-radius: 4px;
+}
+
+.contact .btn-3:hover{
+    background-color: blueviolet;
+    color:white;
+}
+
+.contact h1{
+    color: blueviolet;
+}
+.contact a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.projects a{
+    /* text-decoration: none; */
+    color:white;
+    cursor: pointer;
+     
+} 
+
