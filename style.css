@@ -87,11 +87,12 @@ nav div{
 /* ABOUT SECTION */
 .about .prdhimg {
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     height: auto; /* let image scale naturally */
     object-fit: cover;
     display: block;
     margin: 0 auto 20px; /* center image with bottom spacing */
+    margin-right: 20px;
 }
 
 /* SKILLS PROGRESS BARS */
@@ -456,6 +457,33 @@ nav div{
 }
 
 /* PROJECT CARDS */
+
+.row-equal {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 20px;       /* optional spacing between cards */
+}
+
+.row-equal > .col-lg-6, 
+.row-equal > .col-lg-4 { 
+  display: flex;        /* make child flex */
+}
+
+.row-equal .card-custom {
+  flex: 1;              /* fills the parent height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-custom-image {
+  flex: 1;               /* image takes proportional height */
+}
+
+.card-custom-content {
+  flex: 1;               /* content stretches to match image */
+}
+
+
 .card-custom {
     position: relative;
     overflow: hidden;   /* prevent content from spilling out */
@@ -463,8 +491,12 @@ nav div{
     border-radius: 12px;
     background-color: #1a1a1a; /* optional card background */
     margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: column; */
+
     display: flex;
     flex-direction: column;
+    height: 100%; 
 }
 
 .card-custom-image {
