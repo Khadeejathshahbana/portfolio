@@ -46,111 +46,64 @@ nav div{
     text-decoration: none;
 }
 
-.main{
-    width:100%;
-    /* height:95vh; */
+/* HERO SECTION */
+.main {
+    width: 100%;
+    min-height: 95vh; /* full viewport height */
+    display: flex;
+    align-items: center;
 }
 
-
-.main h3{
-    font-size:4.4rem;
+.main h3 {
+    font-size: 4rem;
     font-weight: 700;
 }
 
-.main h6{
-    font-size:23px;
-    text-transform:uppercase;
-    /* line-height:3; */
+.main h6 {
+    font-size: 22px;
+    text-transform: uppercase;
     border-bottom: 3px solid rgb(167,26,84);
-    width:50%;
+    width: 50%;
 }
 
-.bt1{
-    height:40px;
-    width:145px;
-    color:white;
-    background-color: blueviolet;
-    border:none;
-    /* padding:8px; */
+.main .bt1, .main .bt2 {
+    height: 40px;
+    width: 145px;
     border-radius: 4px;
-    outline:none;
- }
-
-.bt2{
-    height:40px;
-    width:145px;
-    color:blueviolet;
-    background-color: black;
-    border:1px solid blueviolet;
-    border-radius: 4px;
-    
-} 
-
-
-.main .bt1:hover{
-    color:blueviolet;
-    background-color:transparent;
-    transition:0.5s;
-    border:1px solid blueviolet;
-    transition: 0.5s;
-
+    font-weight: 600;
+    margin-top: 10px;
 }
 
-
-/* .main .bt2{
-    height: 55px;
-    width: 138px;
-    background-color: transparent;
-    color:blueviolet;
-    outline: none;
-    border: 1px solid blueviolet;
-    font-weight: bold;
-    border-radius:5px;
-} */
-
-.main .bt2:hover{
-    background-color: blueviolet;
-    color:white;
-    transition: 0.5s;;
-}
-
+/* HERO IMAGE */
 .heroimg {
-  width: 100%;
-  max-width: 520px;
-  height: 580px;
-  object-fit: cover;
-  margin-top: -50px; 
-  margin-right: 50px;
+    width: 100%;
+    max-width: 520px;
+    height: auto; /* let image scale naturally */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
-
-.prdhimg {
-  width: 100%;
-  max-width: 400px;
-  height: 600px;
-  object-fit: cover;
-  margin-top: -150px; 
-  margin-right: 100px;
+/* ABOUT SECTION */
+.about .prdhimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* let image scale naturally */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px; /* center image with bottom spacing */
 }
 
-
-.aboutme{
-    color:blueviolet
-}
-
-.progress{
-    background-color:gray;
-    justify-content: flex-start;
+/* SKILLS PROGRESS BARS */
+.progress {
+    background-color: gray;
     border-radius: 50px;
-    align-items: center;
-    position:relative;
-    display:flex;
-    height:25px;
-    width:95%;
-    /* padding:2px; */
-    overflow:hidden;
+    overflow: hidden;
+    height: 25px;
+    width: 100%;
     margin-top: 15px;
 }
+
 .pro-value1, .pro-value2, .pro-value3, .pro-value4 {
     border-radius: 50px;
     background-color: blueviolet;
@@ -164,6 +117,62 @@ nav div{
     box-sizing: border-box;
     transition: width 3s ease-in-out;
 }
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 992px) {
+    .main h3 {
+        font-size: 3rem;
+    }
+
+    .main h6 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .heroimg {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about .prdhimg {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main .col-lg-4,
+    .main .col-lg-8 {
+        width: 100%;
+    }
+
+    .heroimg {
+        max-width: 100%;
+        margin: 20px 0 0;
+    }
+
+    .about .col-lg-5,
+    .about .col-lg-7 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .prdhimg {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .progress {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
 
 .pro-value1 p, .pro-value2 p, .pro-value3 p, .pro-value4 p {
     display: flex;
@@ -446,38 +455,90 @@ nav div{
     transition: 0.3s;
 }
 
+/* PROJECT CARDS */
 .card-custom {
-  position: relative;
-  /* overflow: hidden; */
-  height: 600px; /*total card height (adjust as needed)*/
+    position: relative;
+    overflow: hidden;   /* prevent content from spilling out */
+    height: auto;       /* dynamic height */
+    border-radius: 12px;
+    background-color: #1a1a1a; /* optional card background */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-custom-image {
-   /* image takes up 60% of the card */
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .card-custom-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: all 0.4s ease;
+    width: 100%;
+    height: auto;       /* scale image naturally */
+    max-height: 300px;  /* optional max height */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .card-custom-content {
-  /* rest of the card (40%) */
-  padding: 15px;
-  color: blueviolet;
+    padding: 15px;
+    flex: 1;            /* fill remaining space */
+    display: flex;
+    flex-direction: column;
 }
 
-.card-custom:hover .card-custom-image img{
-    transform:scale(1.1);
-    
+.card-custom-content h4 {
+    color: blueviolet;
+    margin-bottom: 10px;
 }
 
-.card-custom:hover{
-    transform:scale(1.5);
+.card-custom-content p {
+    color: white;
+    flex-grow: 1;       /* allow text to fill space */
+}
+
+.card-custom-content a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+.card-custom:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 992px) {
+    .card-custom {
+        height: auto;
+    }
+
+    .card-custom-image img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-custom-image img {
+        max-height: 200px;
+    }
+
+    .card-custom-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .card-custom-content p {
+        font-size: 0.9rem;
+    }
 }
 
 .projects h1{
