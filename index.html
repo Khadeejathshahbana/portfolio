@@ -47,7 +47,7 @@
   </div>
 </nav>
 
-<section class="main py-5" style="min-height: 100vh;">
+<section class="main" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4 col-md-6 text-center text-lg-start my-4">
@@ -179,48 +179,57 @@
            </section>
 
 <section class="projects py-5" id="portfolio">
-    <div class="container">
-
-        <div class="row  py-3" data-aos="fade-up" data-aos-duration="1000">
-            <div class=" projects col-lg-6">
-                <h6 class="text-brand">Work</h6>
-                <h1 class=" pb-5 fw-bold">My Recent Projects.</h1>
-            </div>
-        </div>
-
-
-        <div class="row row-equal row d-flex align-items-stretch">
-            <div class="col-lg-6 py-3">
-                <div class="card-custom rounded-4 bg-dark  " data-aos="fade-up" data-aos-duration="1000">
-                    <div class="card-custom-image card-img-top bsm rounded-4 ">
-                        <img class="rounded-4" src="bsm11.jpg" alt="" style="height:300px;">
-                    </div>
-                    <div class="card-custom-content">
-                        <h4>Blockchain in Supply Chain Management</h4>
-                        <p>
-A decentralized web application that enables transparent and tamper-proof tracking of products across the supply chain. Developed using Solidity, React.js, Ethers.js, and Ethereum, the system records every shipment event on the blockchain, ensuring data integrity, traceability, and trust among manufacturers, distributors, and consumers. It enhances visibility, reduces fraud, and improves efficiency in supply chain operations.                        </p>
-                       <a href="https://github.com/Khadeejathshahbana/Blockchain_in_Supply_Chain" class="link-custom">Read More  <span><i class="fas fa-arrow-up-right-from-square"></i></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 py-3">
-                <div class="card-custom rounded-4 bg-dark " data-aos="fade-up" data-aos-duration="1000">
-                    <div class="card-custom-image card-img-top bsm rounded-4 ">
-                        <img class="coin rounded-4" src="cc1.png" alt="" style="height:300px">
-                    </div>
-                    <div class="card-custom-content">
-                            <h4>Coincount-a personal expense tracker</h4>
-                            <p>CoinCount is a web-based personal expense tracking system designed to help users monitor and manage their daily spending efficiently. Built using HTML, CSS, PHP, and MySQL, the system allows users to log income and expenses, categorize transactions, visualize spending through graphs, and plan monthly budgets. It provides secure data storage, intuitive reports, and insights to promote better financial awareness and savings habits.</p>
-                                
-                            <a href="https://github.com/Khadeejathshahbana/Coincount" class="link-custom" >Read More  <span><i class="fas fa-arrow-up-right-from-square"></i></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row py-3" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-lg-6">
+        <h6 class="text-brand">Work</h6>
+        <h1 class="pb-5 fw-bold">My Recent Projects.</h1>
+      </div>
     </div>
 
+    <div class="row align-items-stretch">
+      <!-- Project 1 -->
+      <div class="col-lg-6 py-3 d-flex">
+        <div class="card-custom rounded-4 bg-dark flex-fill" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-custom-image card-img-top rounded-4">
+            <img class="rounded-4" src="bsm11.jpg" alt="" style="height:300px;">
+          </div>
+          <div class="card-custom-content">
+            <h4>Blockchain in Supply Chain Management</h4>
+            <p>
+              A decentralized web application that enables transparent and tamper-proof tracking of products across
+              the supply chain. Developed using Solidity, React.js, Ethers.js, and Ethereum, the system records every
+              shipment event on the blockchain, ensuring data integrity, traceability, and trust among manufacturers,
+              distributors, and consumers.
+            </p>
+            <a href="https://github.com/Khadeejathshahbana/Blockchain_in_Supply_Chain" class="link-custom">
+              Read More <span><i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-6 py-3 d-flex">
+        <div class="card-custom rounded-4 bg-dark flex-fill" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-custom-image card-img-top rounded-4">
+            <img class="coin rounded-4" src="cc1.png" alt="" style="height:300px;">
+          </div>
+          <div class="card-custom-content">
+            <h4>Coincount – a personal expense tracker</h4>
+            <p>
+              CoinCount is a web-based personal expense tracking system designed to help users monitor and manage their
+              daily spending efficiently. Built using HTML, CSS, PHP, and MySQL, it allows users to log income and
+              expenses, visualize spending, and plan monthly budgets.
+            </p>
+            <a href="https://github.com/Khadeejathshahbana/Coincount" class="link-custom">
+              Read More <span><i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="contact py-5" id="contact">
@@ -310,6 +319,7 @@ A decentralized web application that enables transparent and tamper-proof tracki
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+
   
 
   // document.addEventListener('aos:in:skill', ({ detail }) => {

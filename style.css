@@ -5,9 +5,57 @@
     color:white;
 }
 
-body{
-    background-color: black;
+/* .main {
+  padding-top: 0 ;
+  margin-top: 0;
+} */
+
+/* Remove unwanted top gap caused by sticky navbar */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  scroll-behavior: smooth;
 }
+
+/* If using sticky-top navbar */
+/* .navbar.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+} */
+
+/* Add just enough padding below navbar to show hero correctly */
+/* .main {
+  padding-top: 90px !important;  /* match this to navbar height */
+  /*padding-bottom: 3rem;          keep bottom spacing
+} */
+
+/* Remove default py-5 top padding effect */
+/* .main.py-5 {
+  padding-top: 90px !important; /* override py-5 top padding */
+/* }  */
+
+/* Optional – if hero image or heading is still pushed down slightly */
+/* section.main {
+  margin-top: 0 !important;
+} */
+
+
+.navbar {
+  margin-bottom: 0;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1030;
+  background-color: blueviolet;
+  margin-bottom: 0;
+
+}
+
+
 
 .logo {
     color:white;
@@ -30,13 +78,13 @@ body{
     background-color: rgb(82, 6, 153);
 }
 
-nav{
+/* nav{
     background-color: blueviolet;
 }
 
 nav div{
     background-color: blueviolet;
-}
+} */
 
 .navbar-brand{
     font-size: 1.25rem;
@@ -49,9 +97,10 @@ nav div{
 /* HERO SECTION */
 .main {
     width: 100%;
-    min-height: 95vh; /* full viewport height */
+    min-height: 100vh; /* full viewport height */
     display: flex;
     align-items: center;
+    padding-top: 80px;
 }
 
 .main h3 {
@@ -82,6 +131,10 @@ nav div{
     object-fit: cover;
     display: block;
     margin: 0 auto;
+}
+
+.about h1{
+    color:blueviolet;
 }
 
 /* ABOUT SECTION */
