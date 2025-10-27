@@ -95,13 +95,39 @@ nav div{
 }
 
 /* HERO SECTION */
-.main {
+/* .main {
     width: 100%;
     min-height: 100vh; /* full viewport height */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 80px; */
+/* }  */
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* padding-top: 80px;  */
+  margin-top: 0 ;
+  background-color: black;
 }
+
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 120px; /* slightly larger on mobile */
+    /* margin-top: 100px; */
+}
+  }  
+
+.main .container,
+.main .row {
+  padding-top: 0 !important;
+  margin-top: 0;
+}
+
+
 
 .main h3 {
     font-size: 4rem;
@@ -115,12 +141,60 @@ nav div{
     width: 50%;
 }
 
-.main .bt1, .main .bt2 {
+/* .main .bt1, .main .bt2 {
     height: 40px;
     width: 145px;
     border-radius: 4px;
     font-weight: 600;
     margin-top: 10px;
+    
+}
+
+.main .bt1{
+    background-color:blueviolet;
+    color:white;
+}
+
+.main .bt2{
+    color:blueviolet;
+    border-color: blueviolet;
+} */
+
+.bt1{
+    height:40px;
+    width:145px;
+    color:white;
+    background-color: blueviolet;
+    border:none;
+    /* padding:8px; */
+    border-radius: 4px;
+    outline:none;
+ }
+
+.bt2{
+    height:40px;
+    width:145px;
+    color:blueviolet;
+    background-color: black;
+    border:1px solid blueviolet;
+    border-radius: 4px;
+    
+} 
+
+
+.bt1:hover{
+    color:blueviolet;
+    background-color:transparent;
+    transition:0.5s;
+    border:1px solid blueviolet;
+    transition: 0.5s;
+}
+
+
+.bt2:hover{
+    color:white;
+    background-color: blueviolet;
+    transition: 0.5s;
 }
 
 /* HERO IMAGE */
@@ -141,7 +215,7 @@ nav div{
 .about .prdhimg {
     width: 100%;
     /* max-width: 400px; */
-    height: auto; /* let image scale naturally */
+    height: 550px; /* let image scale naturally */
     object-fit: cover;
     display: block;
     margin: 0 auto 20px; /* center image with bottom spacing */
@@ -671,3 +745,46 @@ nav div{
      
 } 
 
+/* 🔥 FINAL FIX FOR HERO + ABOUT GAP 🔥 */
+
+/* Remove any default Bootstrap spacing */
+/* section {
+  margin: 0 !important;
+  padding: 0 !important;
+} */
+
+/* Adjust the hero section under fixed navbar */
+ 
+/* .main {
+  padding-top: 80px !important;
+   margin-top: 0 ;
+}  */
+
+/* Reduce gap between hero and about section */
+/* #about {
+  padding-top: 30px !important;
+  margin-top: 0 !important;
+} */
+
+/* Ensure container inside about doesn't add top padding */
+#about .container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Global background fix */
+body {
+  background-color: black;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* Make navbar toggler visible on dark backgrounds */
+.navbar-toggler {
+  border-color: white; /* white border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
