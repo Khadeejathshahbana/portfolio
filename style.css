@@ -218,7 +218,7 @@ nav div{
 .about .prdhimg {
     width: 100%;
     /* max-width: 400px; */
-    height: 550px; /* let image scale naturally */
+    height: auto; /* let image scale naturally */
     object-fit: cover;
     display: block;
     margin: 0 auto 20px; /* center image with bottom spacing */
