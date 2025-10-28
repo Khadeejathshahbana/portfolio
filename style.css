@@ -16,6 +16,8 @@ body, html {
   padding: 0;
   background-color: black;
   scroll-behavior: smooth;
+  overflow: hidden;
+  width:100%
 }
 
 /* If using sticky-top navbar */
@@ -138,8 +140,8 @@ nav div{
 .main h6 {
     font-size: 22px;
     text-transform: uppercase;
-    border-bottom: 3px solid rgb(167,26,84);
-    width: 50%;
+    /* border-bottom: 3px solid rgb(167,26,84); */
+    /* width: 50%; */
 }
 
 /* .main .bt1, .main .bt2 {
